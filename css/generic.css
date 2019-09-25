@@ -1,0 +1,194 @@
+/**
+ * ------------------------------------------------
+ * Generric Css Stylesheet
+ * ------------------------------------------------
+ */
+
+/**
+ * ------------------------------------------------
+ * Styling Notes
+ * ------------------------------------------------
+ * Dark Blue    - #020623
+ * Light Blue   - #818de3
+ * Pink Red     - #ff224b
+ * White        - #ffffff
+ * ------------------------------------------------
+ */
+
+/**
+ * Minimal Style Reset
+ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Basic Styling And Classes
+ */
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background: #020623;
+}
+
+#wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    padding-top: 80px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/**
+ * Basic Component Styling
+ */
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: default;
+}
+
+/**
+ * Header Styling
+ */
+
+header{
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #020623;
+}
+
+header h1{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+/**
+ * Homepage Styling
+ */
+
+section.homepage{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.homepage .tile{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 100px;
+    background: #020623;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    user-select: none;
+    border: 1px solid #ff224b;
+}
+
+section.homepage .tile:hover{
+    background: #ff224b;
+}
+
+/**
+ * Dashboard Styling
+ */
+
+.no_section_link{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.no_section_link h2{
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+.flex_container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.dashboard{
+    width: 300px;
+    background: #020623;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ff224b;
+}
+
+section.dashboard h2{
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section.dashboard a{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    user-select: none;
+}
+
+section.dashboard a:hover{
+    color: #ffffff;
+    background: #ff224b;
+}
